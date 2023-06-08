@@ -1,6 +1,6 @@
 ﻿namespace MerOmInterface.Stars
 {
-    internal class BlinkingStar
+    internal class BlinkingStar : IStar
     {
         private readonly string _characters = "•*+*• ";
         private int _index;
