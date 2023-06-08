@@ -1,15 +1,17 @@
-﻿namespace MerOmInterface.Chat
+﻿using MerOmInteface.Server;
+
+namespace MerOmInterface.Chat
 {
-    internal class ChatServer
+    public class ChatServer
     {
-        readonly List<ChatClient> _clients;
+        readonly List<IChatClient> _clients;
 
         public ChatServer()
         {
-            _clients = new List<ChatClient>();
+            _clients = new List<IChatClient>();
         }
 
-        public void Broadcast(ChatClient client, string message)
+        public void Broadcast(IChatClient client, string message)
         {
             foreach (var chatClient in _clients)
             {
@@ -20,7 +22,7 @@
             }
         }
 
-        public void Register(ChatClient chatClient)
+        public void Register(IChatClient chatClient)
         {
             _clients.Add(chatClient);
         }

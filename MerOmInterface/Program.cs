@@ -15,7 +15,7 @@ using MerOmInterface.Count;
 using MerOmInterface.Stars;
 
 //StarDemo.Run();
-ChatDemo.Run();
-// CountTextDemo.Run();
+//ChatDemo.Run();
+CountTextDemo.Run();
 
 

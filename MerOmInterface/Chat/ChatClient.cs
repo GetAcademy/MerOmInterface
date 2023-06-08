@@ -1,10 +1,9 @@
-﻿namespace MerOmInterface.Chat
+﻿using MerOmInteface.Server;
+
+namespace MerOmInterface.Chat
 {
-    internal class ChatClient
+    internal class ChatClient : IChatClient
     {
-
-        // Pause til 14:02
-
         private readonly string _name;
         private readonly ChatServer _server;
 
