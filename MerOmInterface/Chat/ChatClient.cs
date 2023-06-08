@@ -2,6 +2,9 @@
 {
     internal class ChatClient
     {
+
+        // Pause til 14:02
+
         private readonly string _name;
         private readonly ChatServer _server;
 
